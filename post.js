@@ -23,7 +23,7 @@ function cadastrarEvento() {
 
 async function addEvent() {
   try {
-    evento.preventDefault()
+    event.preventDefault()
     const response = await fetch(
       'https://xp41-soundgarden-api.herokuapp.com/events',
       {
@@ -35,7 +35,7 @@ async function addEvent() {
         body: JSON.stringify({
           name: nome.value,
           poster: banner.value,
-          attractions: [atracoes],
+          attractions: [atracoes.value],
           description: descricao.value,
           scheduled: data.value,
           number_tickets: lotacao.value

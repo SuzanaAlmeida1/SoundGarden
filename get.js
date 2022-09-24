@@ -14,8 +14,9 @@ async function getEvent() {
         }
       }
     )
-    const evento = await response.json()
-    console.log(response)
+    const evento = await response.json();
+    console.log(response);   
+
 
     evento.forEach(body => {
       //for (let i = 0; i < 6; i++) {
