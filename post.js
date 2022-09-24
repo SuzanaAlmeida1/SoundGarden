@@ -44,6 +44,7 @@ async function addEvent() {
     )
 
     const result = await response.text()
+    alert('O evento cadastrado com sucesso!')
 
     console.log(result)
   } catch (error) {
