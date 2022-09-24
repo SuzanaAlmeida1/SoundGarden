@@ -52,6 +52,7 @@ async function getItems(){
               <a href="/excluir-evento.html?id=${evento._id}" class="btn btn-danger">excluir</a>
           </td>
       </tr>
+      </tbody>
           `
       })
       console.log(data)
